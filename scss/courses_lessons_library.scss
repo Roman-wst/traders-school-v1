@@ -1,0 +1,269 @@
+/* courses */
+.course-passed {
+	position: relative;
+	max-width: 255px;
+	margin-bottom: $grid-gutter-width-base / 2;
+	color: $white;
+	&.course-in-list {
+		margin-bottom: $grid-gutter-width-base;
+		.course-passed-name {
+			bottom: 18%;
+    	font-size: $small-size - 0.05;
+    	line-height: 1rem;
+			@include media-breakpoint-up(sm) {
+				bottom: 16%;
+    		font-size: 1.1rem;
+    		line-height: 1.5rem;
+			}
+		}
+		.course-passed-part {
+			font-size: $small-size - 0.15;
+			@include media-breakpoint-up(sm) {
+				font-size: $small-size;
+			}
+		}
+	}
+	a {
+		color: $white;
+	}
+	&-cover {
+		border-radius: $border-radius;
+	}
+	
+	&-title {
+		font-family: $RobotoMedium;
+	}
+	&-part {
+		font-size: $small-size;
+	}
+	&-name, &-actions {
+		position: absolute;
+		left: 0;
+    width: 100%;
+	}
+	&-name {
+//		bottom: 40px;
+		bottom: 16%;
+	}
+	&-actions {
+		padding: .4rem;
+		bottom: 0; 
+		font-size: $small-size - 0.1;
+    line-height: .9rem;
+		opacity: .6;
+		&:hover {
+			opacity: .8;
+		}
+		@include media-breakpoint-up(sm) {
+			padding: .4rem .8rem;
+		}
+	}
+	&-download {
+		padding-left: 1.1rem;
+	}
+}
+
+/* teachig lessons */
+.teaching-lessons {	
+	position: relative;
+	max-width: 265px;
+	margin-bottom: $grid-gutter-width-base / 2;
+	&-cover {
+		border-radius: $border-radius;
+	}
+	&-title {
+		font-family: $RobotoMedium;
+		color: #474747;
+		@include media-breakpoint-between(md, lg) {
+			font-size: .9rem;
+		}
+	}
+	&-part {
+		font-size: $small-size - 0.1;
+	}
+	&-favorites {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+	}
+	&-actions span {
+		font-size: $small-size - 0.1;
+		line-height: $small-size - 0.1;
+	}
+	
+	&-link {
+		display: block;
+		position: relative;
+		.ic-play {			
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -37px;
+			margin-left: -37px;
+			opacity: 0;
+		}
+		&:hover {
+			.ic-play {
+				opacity: 1;
+				fill: $white;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				border-radius: $border-radius; 
+				background-color: rgba(0,0,0,0.2);
+			} 
+		}
+		
+	}
+	
+}
+
+
+/* library */
+.book {
+	position: relative;
+	margin-bottom: $grid-gutter-width-base / 2;
+	&-title {
+		line-height: 1.1rem;
+	}
+	&-info > div {
+		height: 100%;
+	}
+  @include media-breakpoint-up(xl) {
+		/*max-width: 179px;
+		overflow: hidden;
+		color: $white;
+		a {
+			color: $white;
+		}
+		&-info {
+			position: absolute;
+			top: -50px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: .6rem .6rem .8rem .6rem;
+			background-color: rgba(0,0,0,0.6);
+			opacity: 0;
+			transition: opacity .3s ease-in-out, top .2s ease-in-out;
+		}
+		&:hover &-info {
+			opacity: 1;
+			top: 0;
+		}
+		&-favorites {
+			fill-opacity: 0;
+			transition: fill-opacity .3s ease-in-out;
+		}
+		&:hover &-favorites {
+			fill-opacity: 1;
+		}*/
+		&-title {
+			font-size: 1.1rem;
+		}
+	}
+
+	p {
+		margin-bottom: .5rem;
+	}
+	&-cover {
+		box-shadow: 10px 8px 10px -2px rgba(123, 123, 123, 0.3);
+	}
+
+
+	&-description, &-author, &-actions {
+		font-size: $small-size - 0.1;
+	}
+	&-description {
+		line-height: .9rem;
+	}
+	
+	&-favorites {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 1;
+	}
+	
+	&-in-list {
+		margin-bottom: $grid-gutter-width-base;
+	}
+}
+
+.block-library {
+	@include media-breakpoint-up(xl) {
+		.book {
+			max-width: 179px;
+			overflow: hidden;
+			color: $white;
+			&-info {
+				position: absolute;
+				top: -50px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: .6rem .6rem .8rem .6rem;
+				background-color: rgba(0,0,0,0.6);
+				opacity: 0;
+				transition: opacity .3s ease-in-out, top .2s ease-in-out;
+			}
+			&:hover .book-info {
+				opacity: 1;
+				top: 0;
+			}
+			&-favorites {
+				fill-opacity: 0;
+				transition: fill-opacity .3s ease-in-out;
+			}
+			&:hover .book-favorites {
+				fill-opacity: 1;
+			}	
+			&-actions .ic-download {
+				fill: $white;
+			}
+			a {
+				color: $white;
+			}
+
+		}
+	}
+}
+
+
+.favorites-nav {
+	font-family: $RobotoRegular;
+	a {
+		text-decoration: none !important;
+		border-bottom-width: 0;
+		@include media-breakpoint-up(sm) {
+			border-bottom-width: 1px;
+			border-bottom-style: dotted;
+		}
+		&.active {
+			border-bottom-width: 0;
+		}		
+		.icon { 
+			width: 18px;
+    	height: 18px;
+			fill: $link-color;
+		}
+
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

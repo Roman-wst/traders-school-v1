@@ -1,0 +1,210 @@
+.page-header .user-name {
+  padding-right: 11px;
+	font-size: $small-size - 0.15;
+}
+
+.user {
+	&-profile {
+		.user-name {
+			font-family: $RobotoMedium;
+			padding-left: .45rem;
+			color: $title-color;
+			line-height: 1.8rem;
+			letter-spacing: 0;
+			word-break: break-word;	
+			@include media-breakpoint-up(md) {
+				font-size: 1.1rem;
+			}
+		}
+		.base-progress, .advanced-progress {
+			font-family: $RobotoMedium;
+			font-size: .95rem;
+			margin-top: 1px;
+			margin-left: -2px;
+		}
+		.base-course, .advanced-course {
+			font-size: $small-size - 0.1;
+			height: 37px;
+		}
+		.advanced-course {
+			width: 85px;
+		}
+		&-settings {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		img {
+			width: 60px;
+			height: 60px;
+			border-radius: 100%;
+			@include media-breakpoint-up(md) {
+				width: 80px;
+				height: 80px;
+			}
+		}
+		
+		.test-results {
+			font-size: $small-size - 0.1; 
+			padding-top: 6px;
+			margin-left: 1px;
+			width: 100%;
+			max-width: 140px;
+			border-top: 1px solid $line-color;
+		}
+	}
+	
+	&-current-courses {
+		.course-item {
+			font-size: $small-size;
+			padding-bottom: .7rem;
+			margin-bottom: .7rem;
+			border-bottom: 1px solid #f3f3f3;
+			&:last-child {
+				border-bottom-width: 0;
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+			> [class^='course-'] {
+				padding-left: .1rem;
+				padding-right: .1rem;
+			}
+		}
+		.course-name {
+			@include media-breakpoint-up(sm) {
+				width: 100%;
+			}
+			@include media-breakpoint-up(md) {
+				width: auto;
+			}
+		}
+	}
+	
+	&-progress-info {
+		font-size: $small-size;
+		line-height: $small-size;
+//		> div {
+//			padding-left: 4px;
+//		}
+	}
+
+	&-calendar {
+		td {
+			border-color: #E9E9E9;
+		}
+		.fc {
+			&-head {
+				th {
+					border-width: 0;
+					padding: .6rem 0;
+					font-size: $small-size;
+					font-weight: normal;
+					text-transform: lowercase;
+				}
+			}
+			&-header-toolbar {
+				margin-bottom: 0;
+				text-align: left;
+			}
+			&-view-container {
+				margin-bottom: 2rem;
+				background-color: $white;
+				border-radius: 4px;
+				box-shadow: 0 6px 16px 0px rgba(146, 146, 146, 0.2);
+				overflow-x: auto;
+			}
+			&-body > tr > .fc-widget-content, &-head-container {
+				border-width: 0;
+			}
+			&-head-container {
+				border-bottom-width: 1px;
+			}
+			&-day-number {
+				margin: .2rem .2rem 0 0;
+				font-size: $small-size - 0.1;
+			}
+			&-basic-view .fc-day-top .fc-day-number {
+				font-weight: bold;
+			}
+			&-today {
+				background: transparent !important;
+			}
+			&-today .fc-day-number {
+				width: 18px;
+				height: 18px;
+				line-height: 18px;
+				text-align: center;
+				background-color: #53B8EC;
+				color: #fff;
+				border-radius: 100%;
+			}
+			&-event {
+				background-color: transparent;
+				border-width: 0;
+			}		
+			&-content {
+				.fc-title {
+					display: block;
+					padding: 2px 0 2px 4px;
+					font-family: $RobotoBold;
+					font-size: $small-size - 0.1;
+					border-left-width: 3px;
+					border-left-style: solid;
+				}
+				&.base-course .fc-title {
+					color: $orange-color;
+					border-left-color: $orange-color;
+					background-color: rgba($orange-color, 0.2);
+				}
+				&.advanced-course .fc-title {
+					color: $blue-color;
+					border-left-color: $blue-color;
+					background-color: rgba($blue-color, 0.2);
+				}
+				&.record-is-closed {
+					color: #CECECE;
+				}
+			}
+			&-view {
+				width: 610px;
+				@include media-breakpoint-up(sm) {
+					width: auto;
+				}
+			}
+		}
+	}
+}
+
+.svg-circle	{
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+
+
+
+
+.level-info {
+	width: 80px;
+	font-size: $small-size - 0.25;
+	font-style: italic;
+	line-height: 1;
+	color: #c1c1c1;
+} 
+
+.slider-selection {
+	background: #ff3232;
+	background: -moz-linear-gradient(left, #ff3232 0%, #ff9030 35%, #edff28 64%, #00ff11 100%);
+	background: -webkit-linear-gradient(left, #ff3232 0%,#ff9030 35%,#edff28 64%,#00ff11 100%);
+	background: linear-gradient(to right, #ff3232 0%,#ff9030 35%,#edff28 64%,#00ff11 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#00ff11',GradientType=1 );
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: url(../img/bg-range.png) repeat-x left center;
+	}
+}

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Обучающие уроки</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link href="js/bootstrap-slider/bootstrap-slider.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="js/fullcalendar-3.8.2/fullcalendar.min.css" type="text/css" rel="stylesheet" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+</head>
+<body>
+		
+<!-- header  -->	
+<header class="page-header mb-3">
+    <div class="container-fluid">		
+			<div class="row align-items-center">
+				
+				<div class="col-5 col-sm-6 col-md-2 align-self-stretch">
+					<div class="logotype">
+						<img src="img/logo.png" />
+					</div>
+				</div>
+				
+				<div class="col col-sm-6 col-md-2 push-md-8 col-lg-2 push-lg-8">
+					
+					<div class="d-flex align-items-center w-100">
+						<div class="right-header ml-auto">
+								<span class="user-name d-md-none d-lg-inline">Конcтантин</span>
+								<img src="img/avatar.jpg" width="29px" height="29px" />
+						</div>
+
+						<div class="phone-menu">
+							<svg class="icon ic-menu hidden-sm-up"><use xlink:href="img/sprite.svg#ic-menu"></use></svg>
+							<svg class="icon ic-close hidden-sm-up"><use xlink:href="img/sprite.svg#ic-close"></use></svg>
+						</div>
+					</div>			
+				
+				</div>
+				
+				<div class="col-12 col-sm-12 col-md-8 pull-md-2 col-lg-8 pull-lg-2 d-none d-sm-block">
+					<ul class="nav main-menu flex-column justify-content-between">
+						<li class="nav-item item-home">
+								<a href="index.html" class="nav-link">	
+									<svg class="icon item-icon ic-home"><use xlink:href="img/sprite.svg#ic-home"></use></svg>
+									<div class="item-text">Главная</div>		
+								</a>
+						</li>
+						<li class="nav-item item-test">
+								<a href="testing.html" class="nav-link">
+									<svg class="icon item-icon ic-test"><use xlink:href="img/sprite.svg#ic-test"></use></svg>
+									<div class="item-text">Тестирование</div>		
+									<span class="notify-info">1</span>
+								</a>
+						</li>
+						<li class="nav-item item-learn">
+								<a href="webinar.html" class="nav-link">			
+									<svg class="icon item-icon ic-learn"><use xlink:href="img/sprite.svg#ic-learn"></use></svg>
+									<div class="item-text">Обучение</div>	
+									<span class="notify-info notify-info-attention">!</span>
+								</a>
+						</li>
+						<li class="nav-item item-webinar">
+								<a href="zap_webinar.html" class="nav-link">
+									<svg class="icon item-icon ic-webinar"><use xlink:href="img/sprite.svg#ic-webinar"></use></svg>	
+									<div class="item-text">Записи вебинаров</div>	
+								</a>
+						</li>
+						<li class="nav-item item-lessons">
+								<a href="lessons.html" class="nav-link active">
+									<svg class="icon item-icon ic-lessons"><use xlink:href="img/sprite.svg#ic-lessons"></use></svg>
+									<div class="item-text">Обучающие уроки</div>	
+								</a>
+						</li>
+						<li class="nav-item item-literature">
+								<a href="library.html" class="nav-link">
+									<svg class="icon item-icon ic-literature"><use xlink:href="img/sprite.svg#ic-literature"></use></svg>
+									<div class="item-text">Литература</div>		
+									<span class="notify-info">!</span>
+								</a>
+						</li>
+					</ul>
+					<ul class="nav user-menu-mobile flex-row hidden-sm-up">
+						<li class="nav-item item-settings">
+								<a href="#" class="nav-link d-flex align-items-center">	
+									<svg class="icon item-icon ic-settings"><use xlink:href="img/sprite.svg#ic-settings"></use></svg>
+									<span class="item-text">Профиль</span>		
+								</a>
+						</li>
+						<li class="nav-item item-exit">
+								<a href="#" class="nav-link d-flex align-items-center">
+									<svg class="icon item-icon ic-exit"><use xlink:href="img/sprite.svg#ic-exit"></use></svg>
+									<span class="item-text">Выход</span>
+								</a>
+						</li>
+					</ul>				
+				</div>
+				
+			</div>
+    </div>
+</header>
+<!-- END header  -->
+	
+<!-- main section  -->
+<section>
+	<div class="container-fluid">
+		<div class="row mb-4">
+			<div class="col-12 col-md-12 col-lg-4 flex-last flex-sm-first">
+				<div class="row">
+					<div class="col-12 col-sm-7 col-md-6 col-lg-12">
+						<div class="block block-with-shadow user-profile">
+							<h4 class="block-title">Профиль</h4>
+							<div class="block-content">
+								<div class="d-flex align-items-center p-rel">
+									<img src="img/avatar.jpg" />
+									<div class="user-name">Константин Константинопольский</div>
+									<a href="#a" class="user-profile-settings align-self-start"><svg class="icon ic-settings"><use xlink:href="img/sprite.svg#ic-settings"></use></asvg>
+									</a>
+								</div>
+								<div class="user-progress-info d-flex align-items-start">
+										<div class="mt-4 pt-2 pr-2">				
+											<div class="d-flex">
+												<svg width="42px" height="42px" viewBox="0 0 42 42" class="svg-circle">
+													<circle class="svg-hole" cx="21" cy="21" r="18" fill="#fff"></circle>
+													<circle class="svg-ring" cx="21" cy="21" r="18" fill="transparent" stroke="#EBECF0" stroke-width="5"></circle>
+													<circle class="svg-segment" cx="21" cy="21" r="18" fill="transparent" stroke="#FFB77A" stroke-width="5" stroke-dasharray="120" stroke-dashoffset="0"></circle>
+												</svg>
+												<div>
+													<div class="base-progress mb-2">100%</div>
+													<div class="base-course">Базовый курс</div>
+												</div>
+											</div>
+
+											<div>
+												<div class="test-results">Тестирование</div>
+												<div class="user-range">
+													<input id="it-rang-0" class="it-range" type="text" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-value="140" data-slider-enabled="false" data-slider-ticks-labels='["0", "200"]'/>
+												</div>
+												<div class="d-flex d-flex align-items-center">
+													<div class="level-info">Ваш уровень выше среднего</div>
+													<a href="#"><svg class="icon ic-refresh mr-2"><use xlink:href="img/sprite.svg#ic-refresh"></use></svg></a>
+													<a href="#"><svg class="icon ic-chart"><use xlink:href="img/sprite.svg#ic-chart"></use></svg></a>
+												</div>
+											</div>
+
+										</div>
+
+
+										<div class="mt-4 pt-2 pr-2 ml-auto">
+
+											<div class="d-flex">
+												<svg width="42px" height="42px" viewBox="0 0 42 42" class="svg-circle	">
+													<circle class="svg-hole" cx="21" cy="21" r="18" fill="#fff"></circle>
+													<circle class="svg-ring" cx="21" cy="21" r="18" fill="transparent" stroke="#EBECF0" stroke-width="5"></circle>
+													<circle class="svg-segment" cx="21" cy="21" r="18" fill="transparent" stroke="#45B2DB" stroke-width="5" stroke-dasharray="50 54" stroke-dashoffset="-83"></circle>
+												</svg>							
+												<div>
+													<div class="advanced-progress mb-2">50%</div>
+													<div class="advanced-course">Продвинутый курс</div>
+												</div>
+											</div>
+
+											<div>
+												<div class="test-results">Тестирование</div>
+												<div class="user-range">
+													<input id="it-range-1" class="it-range" type="text" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-value="0" data-slider-enabled="false" data-slider-ticks-labels='["0", "200"]'/>
+												</div>
+												<div class="d-flex justify-content-end align-items-center">
+													<div class="level-info mr-auto">Ваш уровень можно повысить</div>
+													<a href="#"><svg class="icon ic-refresh mr-2"><use xlink:href="img/sprite.svg#ic-refresh"></use></svg></a>
+													<a href="#"><svg class="icon ic-chart"><use xlink:href="img/sprite.svg#ic-chart"></use></svg></a>
+												</div>
+											</div>
+										</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-12 col-sm-5 col-md-6 col-lg-12">
+						<div class="block block-with-shadow user-current-courses">
+							<h4 class="block-title">Вы записались</h4>
+							<div class="block-content">
+								
+								<div class="course-item d-flex flex-wrap flex-row justify-content-between align-items-center">
+				
+									<div class="course-name w-sm-100">Базовый курс, часть 1</div>
+									<div class="course-date font-weight-bold">18.02</div>
+									<div class="course-time">14:00</div>
+									<a href="#" class="course-reminder tooltip-active" data-toggle="tooltip" data-animation="false" title="Добавить напоминание в гугл календарь">
+										<svg class="icon ic-timer d-inline-block align-middle"><use xlink:href="img/sprite.svg#ic-timer"></use></svg>
+									</a>
+									<a href="#" class="course-delete">
+										<svg class="icon ic-close"><use xlink:href="img/sprite.svg#ic-close"></use></svg>
+									</a>									
+									
+								</div>
+								
+								
+								<div class="course-item d-flex flex-wrap flex-row justify-content-between align-items-center">
+				
+									<div class="course-name w-sm-100">Базовый курс, часть 4</div>
+									<div class="course-date font-weight-bold">18.02</div>
+									<div class="course-time">14:00</div>
+									<a href="#" class="course-reminder tooltip-active" data-toggle="tooltip" data-animation="false" title="Добавить напоминание в гугл календарь">
+										<svg class="icon ic-timer d-inline-block align-middle"><use xlink:href="img/sprite.svg#ic-timer"></use></svg>
+									</a>
+									<a href="#" class="course-delete">
+										<svg class="icon ic-close"><use xlink:href="img/sprite.svg#ic-close"></use></svg>
+									</a>									
+									
+								</div>
+							</div>
+						</div>					
+					</div>
+
+				</div>
+			</div>
+			
+			<div class="col-12 col-md-12 col-lg-8">
+		  	<div class="block block-passed-courses">
+					<div class="row no-gutters">
+						<div class="col">
+							<h4 class="block-title">Обучающие уроки</h4>
+						</div>
+						<div class="col-4 text-right">
+							<ul class="list-inline favorites-nav">
+								<li class="list-inline-item mr-3"><a href="#" class="active">Все</a></li>
+								<li class="list-inline-item">
+									<a href="#">
+										<span class="d-none d-sm-inline">Избранное</span>
+										<span class="d-sm-none d-inline-block align-middle">
+											<svg class="icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="block-content row">
+						<div class="col-6 col-sm-4">
+							<div class="teaching-lessons">
+								<a href="#" class="teaching-lessons-link">
+									<img src="img/lesson-1.jpg" class="teaching-lessons-cover" />
+									<svg class="icon ic-play"><use xlink:href="img/sprite.svg#ic-play"></use></svg>
+								</a>
+								<div class="d-flex justify-content-between mt-1 flex-column flex-md-row">
+									<div class="teaching-lessons-name">
+										<div class="teaching-lessons-title">Торговая система</div>
+										<div class="teaching-lessons-part">Лекция 1</div>
+									</div>
+									<div class="teaching-lessons-actions">
+										<a href="#" class="text-nowrap">
+											<svg class="teaching-lessons-download icon ic-download d-inline-block align-middle mr-2"><use xlink:href="img/sprite.svg#ic-download"></use></svg><span>Скачать</span>
+										</a>
+									</div>
+								</div>
+								<svg class="teaching-lessons-favorites icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+							</div>	
+						</div>
+						<div class="col-6 col-sm-4">
+							<div class="teaching-lessons">
+								<a href="#" class="teaching-lessons-link">
+									<img src="img/lesson-2.jpg" class="teaching-lessons-cover" />
+									<svg class="icon ic-play"><use xlink:href="img/sprite.svg#ic-play"></use></svg>
+								</a>
+								<div class="d-flex justify-content-between mt-1 flex-column flex-md-row">
+									<div class="teaching-lessons-name">
+										<div class="teaching-lessons-title">Фундаментальный анализ</div>
+										<div class="teaching-lessons-part">Лекция 2</div>
+									</div>
+									<div class="teaching-lessons-actions">
+										<a href="#" class="text-nowrap">
+											<svg class="teaching-lessons-download icon ic-download d-inline-block align-middle mr-2"><use xlink:href="img/sprite.svg#ic-download"></use></svg><span>Скачать</span>
+										</a>
+									</div>
+								</div>
+								<svg class="teaching-lessons-favorites icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+							</div>	
+						</div>
+						<div class="col-6 col-sm-4">
+							<div class="teaching-lessons">
+								<a href="#" class="teaching-lessons-link">
+									<img src="img/lesson-3.jpg" class="teaching-lessons-cover" />
+									<svg class="icon ic-play"><use xlink:href="img/sprite.svg#ic-play"></use></svg>
+								</a>
+								<div class="d-flex justify-content-between mt-1 flex-column flex-md-row">
+									<div class="teaching-lessons-name">
+										<div class="teaching-lessons-title">Правила проведения фундаментального анализа</div>
+										<div class="teaching-lessons-part">Лекция 3</div>
+									</div>
+									<div class="teaching-lessons-actions">
+										<a href="#" class="text-nowrap">
+											<svg class="teaching-lessons-download icon ic-download d-inline-block align-middle mr-2"><use xlink:href="img/sprite.svg#ic-download"></use></svg><span>Скачать</span>
+										</a>
+									</div>
+								</div>
+								<svg class="teaching-lessons-favorites icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+							</div>	
+						</div>
+						<div class="col-6 col-sm-4">
+							<div class="teaching-lessons">
+								<a href="#" class="teaching-lessons-link">
+									<img src="img/lesson-4.jpg" class="teaching-lessons-cover" />
+									<svg class="icon ic-play"><use xlink:href="img/sprite.svg#ic-play"></use></svg>
+								</a>
+								<div class="d-flex justify-content-between mt-1 flex-column flex-md-row">
+									<div class="teaching-lessons-name">
+										<div class="teaching-lessons-title">Важная макростатистика</div>
+										<div class="teaching-lessons-part">Лекция 4</div>
+									</div>
+									<div class="teaching-lessons-actions">
+										<a href="#" class="text-nowrap">
+											<svg class="teaching-lessons-download icon ic-download d-inline-block align-middle mr-2"><use xlink:href="img/sprite.svg#ic-download"></use></svg><span>Скачать</span>
+										</a>
+									</div>
+
+								</div>
+									<svg class="teaching-lessons-favorites icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+							</div>	
+						</div>
+						<div class="col-6 col-sm-4">
+							<div class="teaching-lessons">
+								<a href="#" class="teaching-lessons-link">
+									<img src="img/lesson-5.jpg" class="teaching-lessons-cover" />
+									<svg class="icon ic-play"><use xlink:href="img/sprite.svg#ic-play"></use></svg>
+								</a>
+								<div class="d-flex justify-content-between mt-1 flex-column flex-md-row">
+									<div class="teaching-lessons-name">
+										<div class="teaching-lessons-title">Операции &laquo;Carry Trade&raquo;</div>
+										<div class="teaching-lessons-part">Лекция 5</div>
+									</div>
+									<div class="teaching-lessons-actions">
+										<a href="#" class="text-nowrap">
+											<svg class="teaching-lessons-download icon ic-download d-inline-block align-middle mr-2"><use xlink:href="img/sprite.svg#ic-download"></use></svg><span>Скачать</span>
+										</a>
+									</div>
+
+								</div>
+									<svg class="teaching-lessons-favorites icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+							</div>	
+						</div>
+						<div class="col-6 col-sm-4">
+							<div class="teaching-lessons">
+								<a href="#" class="teaching-lessons-link">
+									<img src="img/lesson-6.jpg" class="teaching-lessons-cover" />
+									<svg class="icon ic-play"><use xlink:href="img/sprite.svg#ic-play"></use></svg>
+								</a>
+								<div class="d-flex justify-content-between mt-1 flex-column flex-md-row">
+									<div class="teaching-lessons-name">
+										<div class="teaching-lessons-title">Горизонтальные уровни поддержки и сопротивления</div>
+										<div class="teaching-lessons-part">Лекция 6</div>
+									</div>
+									<div class="teaching-lessons-actions">
+										<a href="#" class="text-nowrap">
+											<svg class="teaching-lessons-download icon ic-download d-inline-block align-middle mr-2"><use xlink:href="img/sprite.svg#ic-download"></use></svg><span>Скачать</span>
+										</a>
+									</div>
+
+								</div>
+									<svg class="teaching-lessons-favorites icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+							</div>	
+						</div>
+						<div class="col-6 col-sm-4">
+							<div class="teaching-lessons">
+								<a href="#" class="teaching-lessons-link">
+									<img src="img/lesson-7.jpg" class="teaching-lessons-cover" />
+									<svg class="icon ic-play"><use xlink:href="img/sprite.svg#ic-play"></use></svg>
+								</a>
+								<div class="d-flex justify-content-between mt-1 flex-column flex-md-row">
+									<div class="teaching-lessons-name">
+										<div class="teaching-lessons-title">Правила урпавления капиталом и составление торгового плана</div>
+										<div class="teaching-lessons-part">Лекция 7</div>
+									</div>
+									<div class="teaching-lessons-actions">
+										<a href="#" class="text-nowrap">
+											<svg class="teaching-lessons-download icon ic-download d-inline-block align-middle mr-2"><use xlink:href="img/sprite.svg#ic-download"></use></svg><span>Скачать</span>
+										</a>
+									</div>
+
+								</div>
+									<svg class="teaching-lessons-favorites icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+							</div>	
+						</div>
+						<div class="col-6 col-sm-4">
+							<div class="teaching-lessons">
+								<a href="#" class="teaching-lessons-link">
+									<img src="img/lesson-8.jpg" class="teaching-lessons-cover" />
+									<svg class="icon ic-play"><use xlink:href="img/sprite.svg#ic-play"></use></svg>
+								</a>
+								<div class="d-flex justify-content-between mt-1 flex-column flex-md-row">
+									<div class="teaching-lessons-name">
+										<div class="teaching-lessons-title">Фигуры продолжения тенденции</div>
+										<div class="teaching-lessons-part">Лекция 8</div>
+									</div>
+									<div class="teaching-lessons-actions">
+										<a href="#" class="text-nowrap">
+											<svg class="teaching-lessons-download icon ic-download d-inline-block align-middle mr-2"><use xlink:href="img/sprite.svg#ic-download"></use></svg><span>Скачать</span>
+										</a>
+									</div>
+
+								</div>
+									<svg class="teaching-lessons-favorites icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+							</div>	
+						</div>
+						<div class="col-6 col-sm-4">
+							<div class="teaching-lessons">
+								<a href="#" class="teaching-lessons-link">
+									<img src="img/lesson-9.jpg" class="teaching-lessons-cover" />
+									<svg class="icon ic-play"><use xlink:href="img/sprite.svg#ic-play"></use></svg>
+								</a>
+								<div class="d-flex justify-content-between mt-1 flex-column flex-md-row">
+									<div class="teaching-lessons-name">
+										<div class="teaching-lessons-title">Фигуры разворота тенденции</div>
+										<div class="teaching-lessons-part">Лекция 9</div>
+									</div>
+									<div class="teaching-lessons-actions">
+										<a href="#" class="text-nowrap">
+											<svg class="teaching-lessons-download icon ic-download d-inline-block align-middle mr-2"><use xlink:href="img/sprite.svg#ic-download"></use></svg><span>Скачать</span>
+										</a>
+									</div>
+
+								</div>
+									<svg class="teaching-lessons-favorites icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+							</div>	
+						</div>
+						<div class="col-6 col-sm-4">
+							<div class="teaching-lessons">
+								<a href="#" class="teaching-lessons-link">
+									<img src="img/lesson-10.jpg" class="teaching-lessons-cover" />
+									<svg class="icon ic-play"><use xlink:href="img/sprite.svg#ic-play"></use></svg>
+								</a>
+								<div class="d-flex justify-content-between mt-1 flex-column flex-md-row">
+									<div class="teaching-lessons-name">
+										<div class="teaching-lessons-title">Свечной анализ</div>
+										<div class="teaching-lessons-part">Лекция 10</div>
+									</div>
+									<div class="teaching-lessons-actions">
+										<a href="#" class="text-nowrap">
+											<svg class="teaching-lessons-download icon ic-download d-inline-block align-middle mr-2"><use xlink:href="img/sprite.svg#ic-download"></use></svg><span>Скачать</span>
+										</a>
+									</div>
+
+								</div>
+									<svg class="teaching-lessons-favorites icon ic-star-full"><use xlink:href="img/sprite.svg#ic-star-full"></use></svg>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+
+	</div>
+</section>
+<!-- END main section  -->
+	
+<!-- footer  -->	
+<footer class="page-footer container-fluid mb-5">
+	<div class="row no-gutters line-decor pt-4">
+		<div class="col-12"></div>
+	</div>
+	<div class="row">
+		<div class="col-12 col-sm-5 push-sm-7 col-md-6 push-md-6 col-lg-5 push-lg-7 text-center text-sm-right">
+			<div class="tel">8-800-800-00-00 <svg class="icon ic-tel d-inline-block align-text-bottom"><use xlink:href="img/sprite.svg#ic-tel"></use></svg></div>	
+			<div class="mr-4">Звонок по России бесплатный</div>	
+			<div class="mt-3 mb-3"><a href="#">Онлайн чат<svg class="icon ic-chat d-inline-block align-middle ml-2"><use xlink:href="img/sprite.svg#ic-chat"></use></svg></a></div>
+		</div>	
+		<div class="col-12 col-sm-7 pull-sm-5 col-md-6 pull-md-6 col-lg-7 pull-lg-5 d-flex flex-column">
+			<p>&copy; 2007&nbsp;&mdash; 2018 &laquo;Schooltraing.org&raquo;</p>
+			<div class="mb-3">
+				<a href="#"><svg class="icon ic-lisence d-inline-block align-middle mr-2 mb-2 mb-lg-0 float-left float-lg-none"><use xlink:href="img/sprite.svg#ic-lisence"></use></svg>Лицензия</a> на&nbsp;осуществление образовательной деятельности &#8470;&nbsp;038215 от&nbsp;<nobr>09.02.2017</nobr> года
+			</div>
+			<div class="social-link d-flex flex-first justify-content-center justify-content-sm-start flex-sm-last mb-3">
+				<a href="#" class="mr-2"><svg class="icon ic-twitter"><use xlink:href="img/sprite.svg#ic-twitter"></use></svg></a>
+				<a href="#" class="mr-2"><svg class="icon ic-fb"><use xlink:href="img/sprite.svg#ic-fb"></use></svg></a>
+				<a href="#" class="mr-2"><svg class="icon ic-youtube"><use xlink:href="img/sprite.svg#ic-youtube"></use></svg></a>
+				<a href="#" class="mr-2"><svg class="icon ic-vk"><use xlink:href="img/sprite.svg#ic-vk"></use></svg></a>
+				<a href="#" class="mr-2"><svg class="icon ic-insta"><use xlink:href="img/sprite.svg#ic-insta"></use></svg></a>
+			</div>
+		</div>
+	</div>
+</footer>		
+<!-- END footer -->
+
+<!-- needs for bootstrap + bootstrap -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+		
+<!-- bootstrap slider -->	
+	<script src="js/bootstrap-slider/bootstrap-slider.min.js"></script>
+	
+<!-- Add calendar -->
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar-3.8.2/fullcalendar.min.js"></script>
+	
+<!--	Add custom js file -->
+	<script src="js/user_profile.js"></script>
+
+	
+</body>
+</html>

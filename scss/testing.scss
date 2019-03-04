@@ -1,0 +1,73 @@
+.test {
+	&, &-results {
+		font-size: $small-size - .1;
+	}
+	
+	&-results {
+		td {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		tr {
+			border-bottom: 1px solid #E8E8E8;
+		}
+	}
+		
+	&-ok {
+		margin-bottom: -10px;
+	}
+	
+	&-mark {
+		padding-left: 27px;
+	}
+	
+	&-mark-text, &-date-text {
+		text-transform: uppercase;
+		color: #C7C7C7;
+		font-size: $small-size - 0.25;
+	}
+	
+	&-mark-number {
+		font-family: $RobotoMedium;
+		color: #505050;
+	}
+	
+	&-date-number {
+		font-family: $RobotoRegular;
+		color: #505050;
+	}
+	
+	&-action {
+		padding-top: 10px;
+		a {
+			text-decoration: none;
+		}
+		.icon {
+			width: 30px;
+    	height: 30px;
+		}
+	}
+	
+	&-steps {
+		.test-step {
+			width: 8px;
+			height: 8px;
+			display: inline-block;
+			margin-right: 3px;
+			border-radius: 100%;
+			background-color: #E3E3E3;
+			border: 1px solid transparent;
+		}
+		.current-step {
+			background-color: $white;
+			border-color: #E3E3E3;
+		}
+		.incorrect-answer {
+			background-color: #F33233;
+		}
+		.correct-answer {
+			background-color: #ACDD46;
+		}
+	}
+	
+}

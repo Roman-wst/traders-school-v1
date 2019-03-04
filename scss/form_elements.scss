@@ -1,0 +1,49 @@
+.pseudo-ich {
+	font-size: $small-size - 0.2;
+	margin-top: .1rem;
+	margin-bottom: .1rem;
+	label {
+		display: table;
+		margin-bottom: 0;
+		cursor: pointer;
+	}
+	.form-ich {
+		display: none;
+		&:checked + .custom-ich::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			bottom: 1px;
+			left: 1px;
+			border-radius: 5px;
+			background-color: $orange-color;
+		}
+	}
+	.custom-ich, .lbl-ich {
+		display: table-cell;
+		vertical-align: top;
+	}
+	.custom-ich {
+		display: block;
+		position: relative;
+		width: 7px;
+		height: 7px;
+		border-radius: 11px;
+		border: 1px solid #BDBDBD;
+		margin-left: 5px;
+		margin-top: 3px;
+		@include media-breakpoint-between(sm, md) {
+			margin-left: 2px;
+		}
+	}
+}
+
+.advanced-course .pseudo-ich .form-ich:checked + .custom-ich::before {
+	background-color: $blue-color;
+}
+
+.form-control-feedback {
+	font-size: $small-size;
+}

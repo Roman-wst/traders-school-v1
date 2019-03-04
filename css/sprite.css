@@ -1,0 +1,127 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<i class="icon-home"></i>
+```
+*/
+.icon-menu {
+  background-image: url(sprite.png);
+  background-position: 0px -626px;
+  width: 423px;
+  height: 102px;
+}
+.icon-cert {
+  background-image: url(sprite.png);
+  background-position: 0px -448px;
+  width: 29px;
+  height: 29px;
+}
+.icon-chart {
+  background-image: url(sprite.png);
+  background-position: 0px -43px;
+  width: 19px;
+  height: 14px;
+}
+.icon-chat {
+  background-image: url(sprite.png);
+  background-position: 0px -170px;
+  width: 20px;
+  height: 17px;
+}
+.icon-close {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 10px;
+  height: 10px;
+}
+.icon-cog-lg {
+  background-image: url(sprite.png);
+  background-position: 0px -412px;
+  width: 26px;
+  height: 26px;
+}
+.icon-cog-sm {
+  background-image: url(sprite.png);
+  background-position: 0px -92px;
+  width: 16px;
+  height: 16px;
+}
+.icon-download-hov {
+  background-image: url(sprite.png);
+  background-position: 0px -118px;
+  width: 13px;
+  height: 16px;
+}
+.icon-download-lg {
+  background-image: url(sprite.png);
+  background-position: 0px -282px;
+  width: 17px;
+  height: 21px;
+}
+.icon-download {
+  background-image: url(sprite.png);
+  background-position: 0px -67px;
+  width: 13px;
+  height: 15px;
+}
+.icon-exit {
+  background-image: url(sprite.png);
+  background-position: 0px -20px;
+  width: 18px;
+  height: 13px;
+}
+.icon-star-empty-lg {
+  background-image: url(sprite.png);
+  background-position: 0px -379px;
+  width: 23px;
+  height: 23px;
+}
+.icon-star-empty-sm {
+  background-image: url(sprite.png);
+  background-position: 0px -224px;
+  width: 18px;
+  height: 18px;
+}
+.icon-star-full-sm {
+  background-image: url(sprite.png);
+  background-position: 0px -197px;
+  width: 17px;
+  height: 17px;
+}
+.icon-play {
+  background-image: url(sprite.png);
+  background-position: 0px -551px;
+  width: 65px;
+  height: 65px;
+}
+.icon-refresh {
+  background-image: url(sprite.png);
+  background-position: 0px -144px;
+  width: 19px;
+  height: 16px;
+}
+.icon-social {
+  background-image: url(sprite.png);
+  background-position: 0px -487px;
+  width: 148px;
+  height: 54px;
+}
+.icon-tel {
+  background-image: url(sprite.png);
+  background-position: 0px -252px;
+  width: 20px;
+  height: 20px;
+}
+.icon-timer-hov {
+  background-image: url(sprite.png);
+  background-position: 0px -313px;
+  width: 20px;
+  height: 23px;
+}
+.icon-timer {
+  background-image: url(sprite.png);
+  background-position: 0px -346px;
+  width: 20px;
+  height: 23px;
+}

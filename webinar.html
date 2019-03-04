@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Обучение. Вебинар</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link href="js/bootstrap-slider/bootstrap-slider.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="js/fullcalendar-3.8.2/fullcalendar.min.css" type="text/css" rel="stylesheet" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+	
+	<!-- Put this script tag to the <head> of your page -->
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?152"></script>
+	<script type="text/javascript">VK.init({apiId: 4270695, onlyWidgets: true});</script>
+
+
+</head>
+<body>
+		
+<!-- header  -->	
+<header class="page-header mb-3">
+    <div class="container-fluid">		
+			<div class="row align-items-center">
+				
+				<div class="col-5 col-sm-6 col-md-2 align-self-stretch">
+					<div class="logotype">
+						<img src="img/logo.png" />
+					</div>
+				</div>
+				
+				<div class="col col-sm-6 col-md-2 push-md-8 col-lg-2 push-lg-8">
+					
+					<div class="d-flex align-items-center w-100">
+						<div class="right-header ml-auto">
+								<span class="user-name d-md-none d-lg-inline">Конcтантин</span>
+								<img src="img/avatar.jpg" width="29px" height="29px" />
+						</div>
+
+						<div class="phone-menu">
+							<svg class="icon ic-menu hidden-sm-up"><use xlink:href="img/sprite.svg#ic-menu"></use></svg>
+							<svg class="icon ic-close hidden-sm-up"><use xlink:href="img/sprite.svg#ic-close"></use></svg>
+						</div>
+					</div>			
+				
+				</div>
+				
+				<div class="col-12 col-sm-12 col-md-8 pull-md-2 col-lg-8 pull-lg-2 d-none d-sm-block">
+					<ul class="nav main-menu flex-column justify-content-between">
+						<li class="nav-item item-home">
+								<a href="index.html" class="nav-link">	
+									<svg class="icon item-icon ic-home"><use xlink:href="img/sprite.svg#ic-home"></use></svg>
+									<div class="item-text">Главная</div>		
+								</a>
+						</li>
+						<li class="nav-item item-test">
+								<a href="testing.html" class="nav-link">
+									<svg class="icon item-icon ic-test"><use xlink:href="img/sprite.svg#ic-test"></use></svg>
+									<div class="item-text">Тестирование</div>		
+									<span class="notify-info">1</span>
+								</a>
+						</li>
+						<li class="nav-item item-learn">
+								<a href="webinar.html" class="nav-link active">			
+									<svg class="icon item-icon ic-learn"><use xlink:href="img/sprite.svg#ic-learn"></use></svg>
+									<div class="item-text">Обучение</div>	
+									<span class="notify-info notify-info-attention">!</span>
+								</a>
+						</li>
+						<li class="nav-item item-webinar">
+								<a href="zap_webinar.html" class="nav-link">
+									<svg class="icon item-icon ic-webinar"><use xlink:href="img/sprite.svg#ic-webinar"></use></svg>	
+									<div class="item-text">Записи вебинаров</div>	
+								</a>
+						</li>
+							<li class="nav-item item-lessons">
+								<a href="lessons.html" class="nav-lin">
+									<svg class="icon item-icon ic-lessons"><use xlink:href="img/sprite.svg#ic-lessons"></use></svg>
+									<div class="item-text">Обучающие уроки</div>	
+								</a>
+						</li>
+						<li class="nav-item item-literature">
+								<a href="library.html" class="nav-link">
+									<svg class="icon item-icon ic-literature"><use xlink:href="img/sprite.svg#ic-literature"></use></svg>
+									<div class="item-text">Литература</div>		
+									<span class="notify-info">!</span>
+								</a>
+						</li>
+					</ul>
+					<ul class="nav user-menu-mobile flex-row hidden-sm-up">
+						<li class="nav-item item-settings">
+								<a href="#" class="nav-link d-flex align-items-center">	
+									<svg class="icon item-icon ic-settings"><use xlink:href="img/sprite.svg#ic-settings"></use></svg>
+									<span class="item-text">Профиль</span>		
+								</a>
+						</li>
+						<li class="nav-item item-exit">
+								<a href="#" class="nav-link d-flex align-items-center">
+									<svg class="icon item-icon ic-exit"><use xlink:href="img/sprite.svg#ic-exit"></use></svg>
+									<span class="item-text">Выход</span>
+								</a>
+						</li>
+					</ul>				
+				</div>
+				
+			</div>
+    </div>
+</header>
+<!-- END header  -->
+	
+<!-- main section  -->
+<section>
+	<div class="container-fluid">
+		<div class="row mb-4">
+			<div class="col-12 col-md-12 col-lg-7">				
+				<div class="block">
+						<h4 class="block-title">Вебинар</h4>
+						<div class="block-content">
+							<div class="video-wrapper mb-3">
+								<video controls="controls" poster="video/bitcoin.jpg" class="w-100" title="bitcoin">
+									<source src="video/bitcoin.m4v" type="video/mp4" />
+									<source src="video/bitcoin.webm" type="video/webm" />
+									<source src="video/bitcoin.ogv" type="video/ogg" />
+								</video>
+							</div>
+
+
+							
+							<div id="vk_comments"></div>
+								<script type="text/javascript">
+									VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+								</script>
+						</div>
+					</div>					
+			</div>
+			
+			<div class="col-12 col-md-12 col-lg-5 d-none d-lg-block">
+		  	<div class="webinar text-center pt-5">
+					<img src="img/webinar.png" />
+					
+					<div class="webinar-desc mt-3 h5 ml-auto mr-auto mb-4">Ежедневные видеообзоры рынков и мнения финансовых экспертов</div>
+
+					<div class="webinar-in-social mb-3">Следи за рынком в удобном формате</div>
+					<div class="d-flex mt-2 justify-content-center align-items-center">
+						<a href="http://telegram.org" class="mr-2">
+							<img src="img/telegram.jpg" />
+						</a>
+						<a href="https://vk.com" class="mr-2">
+							<img src="img/vk.jpg" />
+						</a>
+						<a href="https://youtube.com">
+							<img src="img/youtube.jpg" />
+						</a>
+					</div>
+
+				</div>
+
+				
+			</div>
+			
+		</div>	
+		
+		
+	</div>
+</section>
+<!-- END main section  -->
+	
+<!-- footer  -->	
+<footer class="page-footer container-fluid mb-5">
+	<div class="row no-gutters line-decor pt-4">
+		<div class="col-12"></div>
+	</div>
+	<div class="row">
+		<div class="col-12 col-sm-5 push-sm-7 col-md-6 push-md-6 col-lg-5 push-lg-7 text-center text-sm-right">
+			<div class="tel">8-800-800-00-00 <svg class="icon ic-tel d-inline-block align-text-bottom"><use xlink:href="img/sprite.svg#ic-tel"></use></svg></div>	
+			<div class="mr-4">Звонок по России бесплатный</div>	
+			<div class="mt-3 mb-3"><a href="#">Онлайн чат<svg class="icon ic-chat d-inline-block align-middle ml-2"><use xlink:href="img/sprite.svg#ic-chat"></use></svg></a></div>
+		</div>	
+		<div class="col-12 col-sm-7 pull-sm-5 col-md-6 pull-md-6 col-lg-7 pull-lg-5 d-flex flex-column">
+			<p>&copy; 2007&nbsp;&mdash; 2018 &laquo;Schooltraing.org&raquo;</p>
+			<div class="mb-3">
+				<a href="#"><svg class="icon ic-lisence d-inline-block align-middle mr-2 mb-2 mb-lg-0 float-left float-lg-none"><use xlink:href="img/sprite.svg#ic-lisence"></use></svg>Лицензия</a> на&nbsp;осуществление образовательной деятельности &#8470;&nbsp;038215 от&nbsp;<nobr>09.02.2017</nobr> года
+			</div>
+			<div class="social-link d-flex flex-first justify-content-center justify-content-sm-start flex-sm-last mb-3">
+				<a href="#" class="mr-2"><svg class="icon ic-twitter"><use xlink:href="img/sprite.svg#ic-twitter"></use></svg></a>
+				<a href="#" class="mr-2"><svg class="icon ic-fb"><use xlink:href="img/sprite.svg#ic-fb"></use></svg></a>
+				<a href="#" class="mr-2"><svg class="icon ic-youtube"><use xlink:href="img/sprite.svg#ic-youtube"></use></svg></a>
+				<a href="#" class="mr-2"><svg class="icon ic-vk"><use xlink:href="img/sprite.svg#ic-vk"></use></svg></a>
+				<a href="#" class="mr-2"><svg class="icon ic-insta"><use xlink:href="img/sprite.svg#ic-insta"></use></svg></a>
+			</div>
+		</div>
+	</div>
+</footer>		
+<!-- END footer -->
+
+<!-- needs for bootstrap + bootstrap -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+		
+<!-- bootstrap slider -->	
+	<script src="js/bootstrap-slider/bootstrap-slider.min.js"></script>
+	
+<!-- Add calendar -->
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar-3.8.2/fullcalendar.min.js"></script>
+	
+<!--	Add custom js file -->
+	<script src="js/user_profile.js"></script>
+
+</body>
+</html>
